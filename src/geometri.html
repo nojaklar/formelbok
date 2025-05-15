@@ -41,10 +41,11 @@
     <h2>Sirkel</h2>
     <svg viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none"/>
-      <line x1="50" y1="50" x2="90" y2="50" stroke="red" stroke-width="2"/>
+      <line x1="50" y1="50" x2="90" y2="50" stroke="black" stroke-dasharray="2"/>
       <text x="60" y="45" font-size="8">r</text>
     </svg>
     <div class="formel">
+      <strong>Radius:</strong> r<br>
       <strong>Omkrets:</strong> O = 2 · π · r<br>
       <strong>Areal:</strong> A = π · r²
     </div>
@@ -54,20 +55,40 @@
     <h2>Rektangel</h2>
     <svg viewBox="0 0 120 80">
       <rect x="10" y="10" width="100" height="60" stroke="black" stroke-width="2" fill="none"/>
-      <text x="50" y="45" font-size="8">l</text>
-      <text x="3" y="40" font-size="8">b</text>
+      <text x="60" y="80" font-size="8">l</text>
+      <text x="1" y="40" font-size="8">b</text>
     </svg>
     <div class="formel">
-      <strong>Omkrets:</strong> O = 2 · (l + b)<br>
+      <strong>Omkrets:</strong> O = 2 · (l + b)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;l + n + l + b<br>
       <strong>Areal:</strong> A = l · b
     </div>
   </div>
 
   <div class="figur">
+    <h2>Parallellogram</h2>
+    <svg viewBox="0 0 140 80">
+      <!-- Parallellogram -->
+      <polygon points="30,10 130,10 110,70 10,70" stroke="black" stroke-width="2" fill="none"/>
+      <!-- Grunnlinje -->
+      <text x="60" y="78" font-size="8">g</text>
+      <!-- Sidekant -->
+      <text x="10" y="45" font-size="8">s</text>
+      <!-- Høyde -->
+      <line x1="30" y1="10" x2="30" y2="70" stroke="black" stroke-dasharray="2"/>
+      <text x="32" y="45" font-size="8" fill="black">h</text>
+    </svg>
+    <div class="formel">
+      <strong>Omkrets:</strong> O = 2 · (g + s)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;g + s + g + s<br>
+      <strong>Areal:</strong> A = g · h
+    </div>
+  </div>
+  
+
+  <div class="figur">
     <h2>Trekant</h2>
     <svg viewBox="0 0 120 80">
       <polygon points="10,70 110,70 60,10" stroke="black" stroke-width="2" fill="none"/>
-      <line x1="60" y1="10" x2="60" y2="70" stroke="red" stroke-dasharray="4"/>
+      <line x1="60" y1="10" x2="60" y2="70" stroke="black" stroke-dasharray="2"/>
       <text x="62" y="40" font-size="8">h</text>
       <text x="50" y="78" font-size="8">g</text>
     </svg>
@@ -76,6 +97,26 @@
       <strong>Areal:</strong> A = (g · h) / 2
     </div>
   </div>
+
+  <div class="figur">
+    <h2>Trapes</h2>
+    <svg viewBox="0 0 140 100">
+      <!-- Trapes -->
+      <polygon points="40,20 100,20 120,80 20,80" stroke="black" stroke-width="2" fill="none"/>
+      <!-- Parallelle sider -->
+      <text x="65" y="12" font-size="8">a</text>
+      <text x="65" y="95" font-size="8">b</text>
+      <!-- Høyde -->
+      <line x1="40" y1="20" x2="40" y2="80" stroke="black" stroke-dasharray="2"/>
+      <text x="42" y="55" font-size="8" fill="black">h</text>
+    </svg>
+    <div class="formel">
+      <strong>Omkrets:</strong> O = a + b + c + d<br>
+      <strong>Areal:</strong> A = ((a + b) / 2) · h
+    </div>
+  </div>
+  
+
 
   <div class="figur">
     <h2>Prisme (rektangulært)</h2>
