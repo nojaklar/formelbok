@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Funksjoner - 10. klasse</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .funksjon {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    svg {
+      display: block;
+      margin: 10px auto;
+      max-width: 300px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Funksjoner - Oversikt for 10. klasse</h1>
+
+  <div class="funksjon">
+    <h2>1. Lineær funksjon</h2>
+    <div class="formel">
+      <p><code>f(x) = ax + b</code></p>
+      <p>En rett linje. <code>a</code> er stigningstall, <code>b</code> er konstantledd.</p>
+    </div>
+    <svg viewBox="0 0 100 100">
+      <!-- Akser -->
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
+
+      <!-- Linje f(x) = ax + b -->
+      <line x1="10" y1="70" x2="90" y2="10" stroke="black"/>
+
+      <!-- Konstantledd b -->
+      <circle cx="50" cy="55" r="2" fill="red"/>
+      <text x="52" y="57" font-size="6" fill="red">b</text>
+
+      <!-- Stigningstall a (stiplet rute fra punkt på linja) -->
+      <line x1="60" y1="40" x2="70" y2="40" stroke="blue" stroke-dasharray="2"/>
+      <line x1="70" y1="40" x2="70" y2="30" stroke="blue" stroke-dasharray="2"/>
+      <text x="72" y="35" font-size="6" fill="blue">a</text>
+    </svg>
+  </div>
+
+  <div class="funksjon">
+    <h2>2. Proporsjonal funksjon</h2>
+    <div class="formel">
+      <p><code>f(x) = ax</code></p>
+      <p>Går gjennom origo. <code>y</code> er proporsjonal med <code>x</code>.</p>
+    </div>
+    <svg viewBox="0 0 100 100">
+      <line x1="0" y1="100" x2="100" y2="0" stroke="black"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
+    </svg>
+  </div>
+
+  <div class="funksjon">
+    <h2>3. Omvendt proporsjonal funksjon</h2>
+    <div class="formel">
+      <p><code>f(x) = a / x</code></p>
+      <p>Produktet <code>x · y</code> er konstant.</p>
+    </div>
+    <svg viewBox="0 0 100 100">
+      <!-- Akser -->
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
+
+      <!-- Kurver f(x) = a/x -->
+      <path d="M51,5 Q75,30 99,45" stroke="black" fill="none"/>
+      <path d="M1,55 Q25,70 49,95" stroke="black" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="funksjon">
+    <h2>4. Kvadratisk funksjon</h2>
+    <div class="formel">
+      <p><code>f(x) = ax^2 + bx + c</code></p>
+      <p>Grafen er en parabel.</p>
+    </div>
+    <svg viewBox="0 0 100 100">
+      <path d="M0,10 Q50,90 100,10" stroke="black" fill="none"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
+    </svg>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Geometriske Figurer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .figur {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    svg {
+      display: block;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Geometriske Figurer og Formler</h1>
+
+  <div class="figur">
+    <h2>Sirkel</h2>
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none"/>
+      <line x1="50" y1="50" x2="90" y2="50" stroke="red" stroke-width="2"/>
+      <text x="60" y="45" font-size="8">r</text>
+    </svg>
+    <div class="formel">
+      <strong>Omkrets:</strong> O = 2 · π · r<br>
+      <strong>Areal:</strong> A = π · r²
+    </div>
+  </div>
+
+  <div class="figur">
+    <h2>Rektangel</h2>
+    <svg viewBox="0 0 120 80">
+      <rect x="10" y="10" width="100" height="60" stroke="black" stroke-width="2" fill="none"/>
+      <text x="50" y="45" font-size="8">l</text>
+      <text x="3" y="40" font-size="8">b</text>
+    </svg>
+    <div class="formel">
+      <strong>Omkrets:</strong> O = 2 · (l + b)<br>
+      <strong>Areal:</strong> A = l · b
+    </div>
+  </div>
+
+  <div class="figur">
+    <h2>Trekant</h2>
+    <svg viewBox="0 0 120 80">
+      <polygon points="10,70 110,70 60,10" stroke="black" stroke-width="2" fill="none"/>
+      <line x1="60" y1="10" x2="60" y2="70" stroke="red" stroke-dasharray="4"/>
+      <text x="62" y="40" font-size="8">h</text>
+      <text x="50" y="78" font-size="8">g</text>
+    </svg>
+    <div class="formel">
+      <strong>Omkrets:</strong> O = a + b + c<br>
+      <strong>Areal:</strong> A = (g · h) / 2
+    </div>
+  </div>
+
+  <div class="figur">
+    <h2>Prisme (rektangulært)</h2>
+    <svg viewBox="0 0 140 120">
+      <rect x="30" y="50" width="60" height="40" stroke="black" fill="none"/>
+      <polygon points="30,50 20,40 80,40 90,50" stroke="black" fill="none"/>
+      <line x1="20" y1="40" x2="20" y2="80" stroke="black"/>
+      <line x1="80" y1="40" x2="80" y2="80" stroke="black"/>
+      <line x1="20" y1="80" x2="30" y2="90" stroke="black"/>
+      <line x1="80" y1="80" x2="90" y2="90" stroke="black"/>
+      <line x1="30" y1="90" x2="90" y2="90" stroke="black"/>
+      <line x1="20" y1="80" x2="80" y2="80" stroke="black" stroke-dasharray="2"/>
+      <text x="60" y="105" font-size="8">l</text>
+      <text x="95" y="70" font-size="8">h</text>
+      <text x="15" y="90" font-size="8">b</text>
+    </svg>
+    <div class="formel">
+      <strong>Volum:</strong> V = l · b · h
+    </div>
+  </div>
+
+  <div class="figur">
+    <h2>Sylinder</h2>
+    <svg viewBox="0 0 120 100">
+      <ellipse cx="60" cy="20" rx="40" ry="10" stroke="black" fill="none"/>
+      <line x1="20" y1="20" x2="20" y2="80" stroke="black"/>
+      <line x1="100" y1="20" x2="100" y2="80" stroke="black"/>
+      <ellipse cx="60" cy="80" rx="40" ry="10" stroke="black" fill="none"/>
+      <line x1="60" y1="20" x2="60" y2="80" stroke="red" stroke-dasharray="4"/>
+      <line x1="60" y1="20" x2="100" y2="20" stroke="blue" stroke-dasharray="2"/>
+      <text x="62" y="50" font-size="8">h</text>
+      <text x="70" y="18" font-size="8">r</text>
+    </svg>
+    <div class="formel">
+      <strong>Volum:</strong> V = π · r² · h<br>
+      <strong>Areal av overflate:</strong> A = 2 · π · r² + 2 · π · r · h
+    </div>
+  </div>
+
+  <div class="figur">
+    <h2>Kule</h2>
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none"/>
+      <line x1="50" y1="50" x2="90" y2="50" stroke="red" stroke-width="2"/>
+      <text x="60" y="45" font-size="8">r</text>
+    </svg>
+    <div class="formel">
+      <strong>Volum:</strong> V = (4/3) · π · r³<br>
+      <strong>Areal:</strong> A = 4 · π · r²
+    </div>
+  </div>
+
+</body>
+</html>
