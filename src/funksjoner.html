@@ -39,32 +39,33 @@
   </style>
 </head>
 <body>
-  <h1>Funksjoner - Oversikt for 10. klasse</h1>
-
+<h1>Funksjoner - Oversikt for 10. klasse</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
   <div class="funksjon">
     <h2>1. Lineær funksjon</h2>
-    <div class="formel">
-      <p><code>f(x) = ax + b</code></p>
-      <p>En rett linje. <code>a</code> er stigningstall, <code>b</code> er konstantledd.</p>
-    </div>
-    <svg viewBox="0 0 100 100">
-      <!-- Akser -->
-      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
-      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
 
-      <!-- Linje f(x) = ax + b -->
-      <line x1="10" y1="70" x2="90" y2="10" stroke="black"/>
+<div class="formel">
+  <p><code>f(x) = ax + b</code></p>
+  <p>En rett linje. <code>a</code> er stigningstall, <code>b</code> er konstantledd.</p>
+</div>
+<svg viewBox="0 0 100 100">
+  <!-- Akser -->
+  <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
+  <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
 
-      <!-- Konstantledd b -->
-      <circle cx="50" cy="55" r="2" fill="red"/>
-      <text x="52" y="57" font-size="6" fill="red">b</text>
+  <!-- Linje f(x) = ax + b -->
+  <line x1="10" y1="70" x2="90" y2="10" stroke="black"/>
 
-      <!-- Stigningstall a (stiplet rute fra punkt på linja) -->
-      <line x1="60" y1="40" x2="70" y2="40" stroke="blue" stroke-dasharray="2"/>
-      <line x1="70" y1="40" x2="70" y2="30" stroke="blue" stroke-dasharray="2"/>
-      <text x="72" y="35" font-size="6" fill="blue">a</text>
-    </svg>
-  </div>
+  <!-- Konstantledd b -->
+  <circle cx="50" cy="40" r="2" fill="black"/>
+  <text x="45" y="39" font-size="6" fill="black">b</text>
+
+  <!-- Stigningstall a (flyttet oppover og 2 cm til høyre) -->
+  <line x1="64" y1="30" x2="80" y2="30" stroke="black" stroke-dasharray="2"/>
+  <line x1="80" y1="30" x2="80" y2="17" stroke="black" stroke-dasharray="2"/>
+  <text x="82" y="25" font-size="6" fill="black">a</text>
+</svg>
+
 
   <div class="funksjon">
     <h2>2. Proporsjonal funksjon</h2>
@@ -79,22 +80,26 @@
     </svg>
   </div>
 
-  <div class="funksjon">
-    <h2>3. Omvendt proporsjonal funksjon</h2>
-    <div class="formel">
-      <p><code>f(x) = a / x</code></p>
-      <p>Produktet <code>x · y</code> er konstant.</p>
-    </div>
-    <svg viewBox="0 0 100 100">
-      <!-- Akser -->
-      <line x1="50" y1="0" x2="50" y2="100" stroke="#ccc"/>
-      <line x1="0" y1="50" x2="100" y2="50" stroke="#ccc"/>
-
-      <!-- Kurver f(x) = a/x -->
-      <path d="M51,5 Q75,30 99,45" stroke="black" fill="none"/>
-      <path d="M1,55 Q25,70 49,95" stroke="black" fill="none"/>
-    </svg>
+  
+<div class="funksjon">
+  <h2>3. Omvendt proporsjonal funksjon</h2>
+  <div class="formel">
+    <p><code>f(x) = a / x</code></p>
+    <p>Produktet <code>x · y</code> er konstant.</p>
   </div>
+  <svg viewBox="-100 -100 200 200">
+    <!-- X-akse -->
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="black" stroke-width="1"/>
+    <!-- Y-akse -->
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="black" stroke-width="1"/>
+
+    <!-- Hyperbel f(x) = a / x -->
+    <path id="p1" d="M2,-200 Q 2.919,-121.9 3.839,-104.2 5.603,-63.53 7.368,-54.29 10.76,-33.1 14.14,-28.28 20.64,-17.24 27.14,-14.74 39.62,-8.984 52.1,-7.678 76.05,-4.681 100,-4" stroke="black" fill="none" stroke-width="2"/>
+    <use href="#p1" transform="scale(-1,-1)"/>
+  </svg>
+</div>
+
+
 
   <div class="funksjon">
     <h2>4. Kvadratisk funksjon</h2>
