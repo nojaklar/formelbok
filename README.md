@@ -13,3 +13,6 @@ Bruk
 3. Åpne meny.html eller ønsket side i en nettleser – helt uten behov for internett.
 
 
+## Lisens
+
+Dette prosjektet er lisensiert under MIT-lisensen. Se [LICENSE](./LICENSE) for mer informasjon.
