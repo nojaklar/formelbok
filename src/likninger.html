@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Likninger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .formelgruppe {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+<h1>Likninger</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
+  
+
+<div class="formelgruppe">
+  <h3>Innsettingsmetoden</h3>
+  <div class="formel">
+    <p>Løs én ligning med hensyn på én ukjent og sett dette inn i den andre.</p>
+    <p><strong>Likninger:</strong></p>
+    <p>1) x + y = 10</p>
+    <p>2) y = 2x</p>
+    <p>Sett 2) inn i 1): x + 2x = 10 → 3x = 10 → x = 10/3</p>
+    <p>Sett x tilbake i 2): y = 2 · (10/3) = 20/3</p>
+  </div>
+
+    <div class="formel">
+    <p><strong>Ligninger:</strong></p>
+    <pre><code>1) y = 3x + 1
+2) 2x + y = 13</code></pre>
+
+    <p><strong>Steg 1:</strong> Sett 1) inn i 2):</p>
+    <pre><code>2x + (3x + 1) = 13
+5x + 1 = 13
+5x = 12
+x = 12 / 5
+x = 2.4</code></pre>
+
+    <p><strong>Steg 2:</strong> Sett x inn i 1):</p>
+    <pre><code>y = 3 · 2.4 + 1 = 7.2 + 1 = 8.2</code></pre>
+
+    <p><strong>Løsning:</strong> x = 2.4, y = 8.2</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Addisjonsmetoden</h3>
+  <div class="formel">
+    <p>Legg sammen ligningene slik at én ukjent forsvinner.</p>
+    <p><strong>Likninger:</strong></p>
+    <p>1) x + y = 10</p>
+    <p>2) −x + y = 2</p>
+    <p>Legg sammen: (x − x) + (y + y) = 10 + 2 → 2y = 12 → y = 6</p>
+    <p>Sett y = 6 i 1): x + 6 = 10 → x = 4</p>
+  </div>
+
+  <div class="formel">
+    <p><strong>Ligninger:</strong></p>
+    <pre><code>1) 2x + 3y = 16
+2) 4x − 3y = 8</code></pre>
+
+    <p><strong>Steg 1:</strong> Legg sammen:</p>
+    <pre><code>(2x + 4x) + (3y − 3y) = 16 + 8
+6x = 24
+x = 4</code></pre>
+
+    <p><strong>Steg 2:</strong> Sett x inn i 1):</p>
+    <pre><code>2 · 4 + 3y = 16
+8 + 3y = 16
+3y = 8
+y = 8 / 3
+y = 2.67</code></pre>
+
+    <p><strong>Løsning:</strong> x = 4, y ≈ 2.67</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Subtraksjonsmetoden</h3>
+  <div class="formel">
+    <p>Trekk den ene ligningen fra den andre slik at én ukjent forsvinner.</p>
+    <p><strong>Likninger:</strong></p>
+    <p>1) 2x + y = 8</p>
+    <p>2) x + y = 5</p>
+    <p>Trekk 2) fra 1): (2x − x) + (y − y) = 8 − 5 → x = 3</p>
+    <p>Sett x = 3 i 2): 3 + y = 5 → y = 2</p>
+  </div>
+
+
+   <div class="formel">
+    <p><strong>Ligninger:</strong></p>
+    <pre><code>1) 5x + 2y = 20
+2) 3x + 2y = 12</code></pre>
+
+    <p><strong>Steg 1:</strong> Trekk 2) fra 1):</p>
+    <pre><code>(5x − 3x) + (2y − 2y) = 20 − 12
+2x = 8
+x = 4</code></pre>
+
+    <p><strong>Steg 2:</strong> Sett x inn i 2):</p>
+    <pre><code>3 · 4 + 2y = 12
+12 + 2y = 12
+2y = 0
+y = 0</code></pre>
+
+    <p><strong>Løsning:</strong> x = 4, y = 0</p>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Forkorting av brøk</h3>
+  <div class="formel">
+    <p>Du kan forkorte en brøk ved å dele teller og nevner med samme tall.</p>
+    <p><strong>Eksempel:</strong></p>
+    
+    <div style="display: inline-block; vertical-align: middle;">
+      <div style="text-align: center;">12</div>
+      <hr style="margin: 0; border: none; border-top: 1px solid black;">
+      <div style="text-align: center;">18</div>
+    </div>
+= 
+
+    <div style="display: inline-block; vertical-align: middle;">
+      <div style="text-align: center;">(12/6)</div>
+      <hr style="margin: 0; border: none; border-top: 1px solid black;">
+      <div style="text-align: center;">(18/6)</div>
+    </div>
+
+=
+    <div style="display: inline-block; vertical-align: middle;">
+      <div style="text-align: center;">2</div>
+      <hr style="margin: 0; border: none; border-top: 1px solid black;">
+      <div style="text-align: center;">3</div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Faktorisering av tall</h3>
+  <div class="formel">
+    <p>Å faktorisere betyr å skrive et tall som et produkt av faktorer.</p>
+    <p><strong>Eksempel:</strong></p>
+    <p>12 = 2 · 2 · 3 = 2<sup>2</sup> · 3</p>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Faktorisering med felles faktor</h3>
+  <div class="formel">
+    <p>Trekk ut det som er felles i leddene.</p>
+    <p><strong>Eksempel:</strong></p>
+    <p>6x + 9 = 3(2x + 3)</p>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Forkorting av algebraiske brøker</h3>
+  <div class="formel">
+    <p>Faktorisér først telleren og nevneren, og stryk like faktorer.</p>
+
+    <!-- Brøken -->
+    <div style="display: inline-block; vertical-align: middle;">
+      <div style="text-align: center;">(x − 3)(x + 3)</div>
+      <hr style="margin: 0; border: none; border-top: 1px solid black;">
+      <div style="text-align: center;">x + 3</div>
+    </div>
+    &nbsp;= x − 3
+  </div>
+</div>
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Statistikk</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .formelgruppe {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+<h1>Statistikk</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
+
+
+<div class="formelgruppe">
+  <h3>Gjennomsnitt</h3>
+  <div class="formel">
+    <p><strong>Tall:</strong> 3, 4, 5, 5, 6, 7, 8, 9, 9, 10</p>
+    <p><strong>Utregning:</strong></p>
+    <pre><code>(3 + 4 + 5 + 5 + 6 + 7 + 8 + 9 + 9 + 10) / 10 = 66 / 10 = 6.6</code></pre>
+    <p><strong>Gjennomsnitt:</strong> 6.6</p>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Median</h3>
+  <div class="formel">
+    <p><strong>Tall:</strong> 2, 3, 5, 6, 7, 8, 9, 10, 11, 12</p>
+    <p><strong>Midterste to tall:</strong> 7 og 8</p>
+    <p><strong>Utregning:</strong></p>
+    <pre><code>(7 + 8) / 2 = 15 / 2 = 7.5</code></pre>
+    <p><strong>Median:</strong> 7.5</p>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Typetall (modus)</h3>
+  <div class="formel">
+    <p><strong>Tall:</strong> 3, 4, 4, 5, 6, 6, 6, 7, 8, 9</p>
+    <p><strong>Tallet som går igjen flest ganger:</strong> 6 (tre ganger)</p>
+    <p><strong>Typetall:</strong> 6</p>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Spredningsmål</h3>
+  <div class="formel">
+    <p>Spredningsmål sier noe om hvor spredt verdiene i et datamateriale er.</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Variasjonsbredde</h3>
+  <div class="formel">
+    <p>Variasjonsbredden er forskjellen mellom største verdi og minste verdi.</p>
+    <p><code>Variasjonsbredde = største verdi − minste verdi</code></p>
+    <p><b  style='color:red !important;'>1</b> , 1 , 5 , 7 , 8 , 8 , 9 , 10 , 11 , 11 , 11 , 12 , 12 , 15 , 18 , 22 , 22 , 25 , 27 , 27 , 29 , <b  style='color:red !important;'>30</b></p>
+    <p>30 - 1 = 29</p>
+
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Første kvartil (Q1)</h3>
+  <div class="formel">
+    <p>Første kvartil er den midterste verdien i den nedre halvdelen av det sorterte datasettet.</p>
+    <p>1 , 1 , 5 , 7 , 8 , <b  style='color:red !important;'>8</b> , 9 , 10 , 11 , 11 , 11 , 12 , 12 , 15 , 18 , 22 , 22 , 25 , 27 , 27 , 29 , 30</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Tredje kvartil (Q3)</h3>
+  <div class="formel">
+    <p>Tredje kvartil er den midterste verdien i den øvre halvdelen av det sorterte datasettet.</p>
+    <p>1 , 1 , 5 , 7 , 8 , 8 , 9 , 10 , 11 , 11 , 11 , 12 , 12 , 15 , 18 , 22 , <b  style='color:red !important;'>22</b> , 25 , 27 , 27 , 29 , 30</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Kvartilbredde</h3>
+  <div class="formel">
+    <p>Kvartilbredden er differansen mellom tredje og første kvartil.</p>
+    <p><code>Kvartilbredde = Q3 − Q1</code></p>
+ <p>1 , 1 , 5 , 7 , 8 , <b  style='color:red !important;'>8</b> , 9 , 10 , 11 , 11 , 11 , 12 , 12 , 15 , 18 , 22 , <b  style='color:red !important;'>22</b> , 25 , 27 , 27 , 29 , 30</p>
+    <p>22 - 8 = 14</p>
+
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>50 % av verdiene</h3>
+  <div class="formel">
+    <p>Omtrent 50 % av verdiene befinner seg mellom første og tredje kvartil.</p>
+  </div>
+</div>
+
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Sannsynlighet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .formelgruppe {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+<h1>Sannsynlighet</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
+  
+<div class="formelgruppe">
+  <h3>Hva er sannsynlighet?</h3>
+  <div class="formel">
+    <p>Sannsynlighet handler om hvor sannsynlig det er at noe skjer.</p>
+    <p>Verdien er alltid mellom 0 og 1.</p>
+    <p>0 betyr at noe er umulig. 1 betyr at det er helt sikkert.</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Utfall, hendelse og uniform sannsynlighetsmodell</h3>
+  <div class="formel">
+    <p><strong>Utfall:</strong> Et enkelt resultat i et forsøk (f.eks. å få en 4-er med terning).</p>
+    <p><strong>Hendelse:</strong> En samling av ett eller flere utfall (f.eks. å få partall).</p>
+    <p><strong>Uniform modell:</strong> Alle utfall er like sannsynlige (f.eks. vanlig terning).</p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Finne sannsynlighet i en uniform modell</h3>
+  <div class="formel">
+    <p><strong>Formel:</strong></p>
+    <p><code>Sannsynlighet = antall gunstige utfall / antall mulige utfall</code></p>
+    <p><strong>Eksempel:</strong> Hva er sannsynligheten for å få 2 med en terning?</p>
+    <p><code>1 gunstig utfall / 6 mulige utfall = 1/6</code></p>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Motsatte hendelser</h3>
+  <div class="formel">
+    <p>To hendelser er motsatte hvis den ene skjer når den andre ikke skjer.</p>
+    <p><strong>Formel:</strong> <code>P(A) = 1 − P(Ikke A)</code></p>
+    <p><strong>Eksempel:</strong> Hvis sannsynligheten for å vinne er 0.3:</p>
+    <p><code>Sannsynlighet for å ikke vinne = 1 − 0.3 = 0.7</code></p>
+  </div>
+</div>
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Programmering</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .funksjon {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .formel {
+      background-color: #eef;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    svg {
+      display: block;
+      margin: 10px auto;
+      max-width: 300px;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+<h1>Programmering</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
+
+
+<div class="formelgruppe">
+  <h3>Skrive tekst til skjermen</h3>
+  <div class="formel">
+    <pre><code>print("Hei verden!")</code></pre>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Variabler</h3>
+  <div class="formel">
+    <pre><code>navn = "Emma"
+print(navn)</code></pre>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Flere ting samtidig</h3>
+  <div class="formel">
+    <pre><code>navn = "Emma"
+alder = 14
+print("Hei, jeg heter", navn, "og er", alder, "år gammel.")</code></pre>
+  </div>
+</div>
+
+<div class="formelgruppe">
+  <h3>Favorittfarge</h3>
+  <div class="formel">
+    <pre><code>navn = "Emma"
+favorittfarge = "blå"
+print("Favorittfargen til", navn, "er", favorittfarge)</code></pre>
+  </div>
+</div>
+
+
+
+
+<div class="formelgruppe">
+  <h3>Regneoperasjoner</h3>
+  <div class="formel">
+    <pre><code>print(3 + 5)
+print(10 - 4)
+print(6 * 2)
+print(8 / 2)
+print(2 ** 3)</code></pre>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Kommentarer i koden</h3>
+  <div class="formel">
+    <pre><code># Dette er en kommentar
+print("Kommentarer påvirker ikke koden")</code></pre>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Heltall og desimaltall</h3>
+  <div class="formel">
+    <pre><code>x = 5
+y = 3.14
+
+print(type(x))
+print(type(y))</code></pre>
+  </div>
+</div>
+
+
+
+<div class="formelgruppe">
+  <h3>Brukerinput – navn</h3>
+  <div class="formel">
+    <pre><code>navn = input("Hva heter du? ")
+print("Hei", navn)</code></pre>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Brukerinput – tall</h3>
+  <div class="formel">
+    <pre><code>tall = float(input("Skriv inn et tall: "))
+
+print("Tallet delt på 2 er", tall / 2)
+print("Tallet opphøyd i 4 er", tall ** 4)</code></pre>
+  </div>
+</div>
+
+
+<div class="formelgruppe">
+  <h3>Vanlige datatyper i Python</h3>
+    <div class="formel">
+  <table>
+    <thead>
+      <tr>
+        <th>Datatype</th>
+        <th>Eksempel</th>
+        <th>Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>int</code></td>
+        <td><code>5</code>, <code>-3</code></td>
+        <td>Heltall</td>
+      </tr>
+      <tr>
+        <td><code>float</code></td>
+        <td><code>3.14</code>, <code>-0.5</code></td>
+        <td>Desimaltall</td>
+      </tr>
+      <tr>
+        <td><code>str</code></td>
+        <td><code>"tekst"</code>, <code>'abc'</code></td>
+        <td>Tekst (streng)</td>
+      </tr>
+      <tr>
+        <td><code>bool</code></td>
+        <td><code>True</code>, <code>False</code></td>
+        <td>Sannhetsverdi</td>
+      </tr>
+      <tr>
+        <td><code>list</code></td>
+        <td><code>[1, 2, 3]</code></td>
+        <td>Liste med flere verdier</td>
+      </tr>
+      <tr>
+        <td><code>dict</code></td>
+        <td><code>{"navn": "Anna"}</code></td>
+        <td>Ordbok med nøkkel-verdi-par</td>
+      </tr>
+      <tr>
+        <td><code>tuple</code></td>
+        <td><code>(4, 5)</code></td>
+        <td>Uforanderlig liste</td>
+      </tr>
+      <tr>
+        <td><code>set</code></td>
+        <td><code>{1, 2, 3}</code></td>
+        <td>Mengde med unike verdier</td>
+      </tr>
+      <tr>
+        <td><code>NoneType</code></td>
+        <td><code>None</code></td>
+        <td>Mangler verdi (null-verdi)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
+
+
+</body>
+</html>

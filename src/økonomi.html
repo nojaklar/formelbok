@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Økonomi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fdfdfd;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      background-color: #eef;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<h1>Økonomi og Excel-funksjoner</h1>
+<div ><h2><a href="meny.html">Meny</a></h2></div>
+  <h2>Statistikk og regnefunksjoner</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hva</th>
+        <th>Beskrivelse</th>
+        <th>Formel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Summer</td>
+        <td>Legger sammen en rekke tall</td>
+        <td><code>=SUMMER(A1:A5)</code></td>
+      </tr>
+      <tr>
+        <td>Gjennomsnitt</td>
+        <td>Regner ut gjennomsnittet</td>
+        <td><code>=GJENNOMSNITT(B1:B10)</code></td>
+      </tr>
+	  <tr>
+        <td>Median</td>
+        <td>Finner medianen</td>
+        <td><code>=MEDIAN(C1:C10)</code></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Maks</td>
+        <td>Finner det største tallet i en rekke</td>
+        <td><code>=MAKSA(C1:C10)</code></td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Finner det minste tallet i en rekke</td>
+        <td><code>=MIN(D1:D10)</code></td>
+      </tr>
+      <tr>
+        <td>Typetall</td>
+        <td>Finner typetallet (det tallet som forekommer flest ganger)</td>
+        <td><code>=MODUS(E1:E10)</code></td>
+      </tr>
+      <tr>
+        <td>Antall Tall</td>
+        <td>Teller hvor mange tall som er i en rekke</td>
+        <td><code>=ANTALL(F1:F10)</code></td>
+      </tr>
+      <tr>
+        <td>Antall celler med tekst eller tall</td>
+        <td>Teller hvor mange tall som er i en rekke</td>
+        <td><code>=ANTALLA(F1:F10)</code></td>
+      </tr>
+      <tr>
+        <td>Logisk HVIS</td>
+        <td>Tester en betingelse og returnerer én verdi hvis den er sann, og en annen hvis den er usann</td>
+        <td><code>=HVIS(A1>10; "Stor"; "Liten")</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Lånefunksjoner</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Hva</th>
+        <th>Beskrivelse</th>
+        <th>Funksjon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Terminbeløp annuitetslån</td>
+        <td>Brukes til å finne terminbeløpet i ett annuitetslån med månedlige avdrag</td>
+        <td><code>=-AVDRAG(Årlig rente/12; Antall innbetallinger; Lånesum)</code></td>
+      </tr>
+      <tr>
+        <td>Avdrag serielån</td>
+        <td>Brukes til å finne avdraget for et serielån</td>
+        <td><code>=Totalt lån / Antall perioder</code></td>
+      </tr>
+      <tr>
+        <td><code>RENTER</code></td>
+        <td>Finner rente for annuitets- og serielån</td>
+        <td><code>=(Årlig rente / 12 * Restgjeld )</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Regnearter i Excel og kalkulator</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Regneart</th>
+        <th>Excel-tegn</th>
+        <th>Kalkulatorknapp</th>
+        <th>Eksempel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pluss</td>
+        <td><code>+</code></td>
+        <td>+</td>
+        <td><code>=3+4</code></td>
+      </tr>
+      <tr>
+        <td>Minus</td>
+        <td><code>-</code></td>
+        <td>-</td>
+        <td><code>=7-2</code></td>
+      </tr>
+      <tr>
+        <td>Gange</td>
+        <td><code>*</code></td>
+        <td>x</td>
+        <td><code>=5*3</code></td>
+      </tr>
+      <tr>
+        <td>Dele</td>
+        <td><code>/</code></td>
+        <td>÷</td>
+        <td><code>=10/2</code></td>
+      </tr>
+      <tr>
+        <td>Potens</td>
+        <td><code>^</code></td>
+        <td>y<sup>x</sup></td>
+        <td><code>=2^3</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<div class="formelgruppe">
+  <h3>Bruk av <code>$</code> i Excel</h3>
+  <div class="formel">
+    <p><strong>Uten $:</strong> <code>=A1</code>  
+      <br>→ Justeres når du kopierer formelen (relativ referanse)</p>
+
+    <p><strong>Lås kolonnen:</strong> <code>=$A1</code>  
+      <br>→ Kolonnen A er låst, men radnummeret justeres</p>
+
+    <p><strong>Lås raden:</strong> <code>=A$1</code>  
+      <br>→ Raden 1 er låst, men kolonnebokstaven justeres</p>
+
+    <p><strong>Lås både kolonne og rad:</strong> <code>=$A$1</code>  
+      <br>→ Både kolonne A og rad 1 er låst (absolutt referanse)</p>
+  </div>
+</div>
+
+
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
+
+
+</body>
+</html>

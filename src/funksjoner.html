@@ -2,7 +2,7 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>Funksjoner - 10. klasse</title>
+  <title>Funksjoner</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -124,20 +124,94 @@
     <p><code>f(x) = a · b<sup>x</sup></code></p>
     <p>Grafen viser en raskt stigende kurve når <code>b &gt; 1</code>. Her vises <code>f(x) = e<sup>x</sup></code>.</p>
   </div>
-
   <svg viewBox="0 0 720 550" width="300" height="230">
     <!-- Akser -->
     <line x1="0" y1="275" x2="720" y2="275" stroke="#ccc" /> <!-- x-akse -->
     <line x1="360" y1="0" x2="360" y2="550" stroke="#ccc" /> <!-- y-akse -->
 
     <!-- Eksponentiell vekst f(x) = e^x -->
-    <path stroke="#0a0" fill="none" stroke-width="3"
+    <path stroke="black" fill="none" stroke-width="3"
       d="M -8.5 502.39 C 510 492 605 550 711.5 51.94" />
   </svg>
+
+
 </div>
 
 
+<div class="formelgruppe">
+  <h3>Eksempler på eksponentielle funksjoner</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Funksjon</th>
+        <th>Beskrivelse</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Vekst -->
+      <tr>
+        <td><code>f(x) = 2<sup>x</sup></code></td>
+        <td>Dobles for hver x-verdi</td>
+        <td>Vekst</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 3<sup>x</sup></code></td>
+        <td>Tredobles</td>
+        <td>Vekst</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 10<sup>x</sup></code></td>
+        <td>Kraftig vekst</td>
+        <td>Vekst</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = e<sup>x</sup></code></td>
+        <td>Naturlig eksponentiell vekst</td>
+        <td>Vekst</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 1.5<sup>x</sup></code></td>
+        <td>Vokser 50 % per enhet</td>
+        <td>Vekst</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 5 · 2<sup>x</sup></code></td>
+        <td>Starter på 5, dobles hver gang</td>
+        <td>Vekst</td>
+      </tr>
 
+      <!-- Nedgang -->
+      <tr>
+        <td><code>f(x) = 0.5<sup>x</sup></code></td>
+        <td>Halveres for hver x-verdi</td>
+        <td>Nedgang</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 0.1<sup>x</sup></code></td>
+        <td>Rask nedgang</td>
+        <td>Nedgang</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = e<sup>−x</sup></code></td>
+        <td>Naturlig eksponentiell nedgang</td>
+        <td>Nedgang</td>
+      </tr>
+      <tr>
+        <td><code>f(x) = 100 · 0.9<sup>x</sup></code></td>
+        <td>Starter på 100, synker med 10 %</td>
+        <td>Nedgang</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer style="margin-top: 2em; padding: 1em; text-align: center; font-size: 0.9em; color: #555;">
+   Se kildekoden på 
+  <a href="https://github.com/nojaklar/formelbok/tree/main" target="_blank" style="color: #0066cc;">
+    github.com/nojaklar/formelbok
+  </a>
+</footer>
 
 
 </body>
