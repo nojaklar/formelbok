@@ -47,7 +47,7 @@
     <div class="formel">
       <strong>Radius:</strong> r<br>
       <strong>Omkrets:</strong> O = 2 · π · r<br>
-      <strong>Areal:</strong> A = π · r²
+      <strong>Areal:</strong> A = π · r<sup>2</sup>
     </div>
   </div>
 
@@ -137,7 +137,7 @@
       <strong>Volum:</strong> V = l · b · h
     </div>
   </div>
-
+<!--
   <div class="figur">
     <h2>Sylinder</h2>
     <svg viewBox="0 0 120 100">
@@ -151,11 +151,11 @@
       <text x="70" y="18" font-size="8">r</text>
     </svg>
     <div class="formel">
-      <strong>Volum:</strong> V = π · r² · h<br>
-      <strong>Areal av overflate:</strong> A = 2 · π · r² + 2 · π · r · h
+      <strong>Volum:</strong> V = π · r<sup>2</sup> · h<br>
+      <strong>Areal av overflate:</strong> A = 2 · π · r<sup>2</sup> + 2 · π · r · h
     </div>
   </div>
-
+-->
 <div class="figur">
   <h2>Kule</h2>
   <svg viewBox="0 0 100 100">
@@ -164,7 +164,7 @@
 
     <!-- 3D-effekt: ellipse delt i to -->
     <!-- Bakre del (stiplet linje) -->
-        <path d="M10,50 A40,14 0 0,1 90,50" stroke="black" stroke-dasharray="3" fill="none"/>
+        <path d="M10,50 A40,14 0 0,1 90,50" stroke="grey" stroke-dasharray="3" fill="none"/>
     <!-- Fremre del (hel linje) -->
     <path d="M90,50 A40,14 0 0,1 10,50" stroke="black" fill="none"/>
 
@@ -175,8 +175,8 @@
     <text x="62" y="47" font-size="8" fill="black">r</text>
   </svg>
   <div class="formel">
-    <strong>Volum:</strong> V = (4/3) · π · r³<br>
-    <strong>Areal:</strong> A = 4 · π · r²
+    <strong>Volum:</strong> V = (4/3) · π · r<sup>3</sup><br>
+    <strong>Areal:</strong> A = 4 · π · r<sup>2</sup>
   </div>
 </div>
 
@@ -188,38 +188,67 @@
     <!-- Synlige kanter -->
     <path d="M10,200 l135,10 l65,-30 L110,10 z M110,10 L145,210" stroke="black" stroke-width="2" fill="none" />
     <!-- Skjulte linjer (stiplet) -->
-    <path d="M10,200 l65,-30 l135,10 M110,10 L75,170" stroke="black" stroke-dasharray="5,5" stroke-width="1" fill="none" />
+    <path d="M10,200 l65,-30 l135,10 M110,10 L75,170" stroke="gray" stroke-dasharray="5,5" stroke-width="1" fill="none" />
     <!-- Høyde (stiplet) -->
     <path d="M110,190 L110,10" stroke="black"  stroke-dasharray="3" fill="none" />
     <text x="100" y="120" fill="black">h</text>
   </svg>
-  <div class="formel">
-    <strong>Volum:</strong> V = (G · h) / 3<br>
-    <em>G = arealet av grunnflaten</em>
-  </div>
+<div class="formel">
+  <strong>Volum:</strong>
+  V =
+  <span style="display: inline-block; vertical-align: middle;">
+    <span style="display: block; text-align: center;">G · h</span>
+    <hr style="margin: 0; border: 0; border-top: 1px solid black;">
+    <span style="display: block; text-align: center;">3</span>
+  </span>
+  <br>
+  <em>G = arealet av grunnflaten</em>
+  <br><br>
+  <!-- 
+  veldig usikker på denne formelen, internett er ikke helt enige her
+  <strong>Areal:</strong> A = G + (O · h<sub>s</sub>) / 2 
+-->
+</div>
 </div>
 
 <div class="figur">
   <h2>Kjegle</h2>
   <svg viewBox="0 0 120 100">
-    <!-- Grunnsirkel -->
-    <ellipse cx="60" cy="80" rx="40" ry="10" stroke="black" fill="none"/>
     <!-- Bakre del av ellipse (stiplet) -->
     <path d="M20,80 A40,10 0 0,1 100,80" stroke="gray" stroke-dasharray="3" fill="none"/>
+    
+    <!-- Fremre del av ellipse (heltrukket) -->
+    <path d="M100,80 A40,10 0 0,1 20,80" stroke="black" fill="none"/>
+
     <!-- Sidekanter -->
     <line x1="20" y1="80" x2="60" y2="20" stroke="black"/>
     <line x1="100" y1="80" x2="60" y2="20" stroke="black"/>
+    <text x="85" y="50" font-size="8" fill="black">s</text>
+
     <!-- Høyde (stiplet) -->
     <line x1="60" y1="20" x2="60" y2="80" stroke="black" stroke-dasharray="3"/>
-    <text x="62" y="50" font-size="8" fill="black">h</text>
+    <text x="62" y="54" font-size="8" fill="black">h</text>
+
     <!-- Radius -->
-    <line x1="60" y1="80" x2="100" y2="80" stroke="black"/>
+    <line x1="60" y1="80" x2="100" y2="80" stroke="black" stroke-dasharray="3"/>
     <text x="80" y="77" font-size="8" fill="black">r</text>
   </svg>
-  <div class="formel">
-    <strong>Volum:</strong> V = (π · r² · h) / 3
-  </div>
+<div class="formel">
+  
+<strong>Volum:</strong>
+V = <span style="display: inline-block; vertical-align: middle;">
+  <span style="display: block; text-align: center;">π · r<sup>2</sup> · h</span>
+  <hr style="margin: 0; border: 0; border-top: 1px solid black;">
+  <span style="display: block; text-align: center;">3</span>
+</span><br>
+
+
+  <strong>Areal:</strong> A = π · r · r + π · r · s
 </div>
+<p><em>Der s er lengden av sidekanten (skrå høyde).</em></p>
+
+</div>
+
 
 
 <div class="figur">
@@ -229,7 +258,7 @@
     <ellipse cx="60" cy="30" rx="40" ry="10" stroke="black" fill="none"/>
     <!-- Nedre ellipse (delvis stiplet for bakre del) -->
     <path d="M20,90 A40,10 0 0,0 100,90" stroke="black" fill="none"/>
-    <path d="M100,90 A40,10 0 0,0 20,90" stroke="gray" stroke-dasharray="3" fill="none"/>
+    <path d="M100,90 A40,10 0 0,0 20,90" stroke="grey" stroke-dasharray="3" fill="none"/>
     <!-- Sidekanter -->
     <line x1="20" y1="30" x2="20" y2="90" stroke="black"/>
     <line x1="100" y1="30" x2="100" y2="90" stroke="black"/>
@@ -241,7 +270,7 @@
     <text x="80" y="27" font-size="8" fill="black">r</text>
   </svg>
   <div class="formel">
-    <strong>Volum:</strong> V = π · r² · h<br>
+    <strong>Volum:</strong> V = π · r<sup>2</sup> · h<br>
     <strong>Areal:</strong> A = 2 · π · r (r + h)
   </div>
 </div>
